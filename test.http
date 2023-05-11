@@ -1,0 +1,29 @@
+@baseUrl = http://192.168.1.20:8448
+
+GET {{baseUrl}}/todo?api_key=4A8F7B2E3D6C9A1F5E8D2C6B9A3F7E2D
+
+###
+
+POST {{baseUrl}}/todo?api_key=4A8F7B2E3D6C9A1F5E8D2C6B9A3F7E2D
+Content-Type: application/json
+
+{
+    "category_id": 1,
+    "title": "bababa",
+    "due_date": "2023-05-20"
+}
+
+###
+
+PUT {{baseUrl}}/todo/51?api_key=4A8F7B2E3D6C9A1F5E8D2C6B9A3F7E2D
+Content-Type: application/json
+
+{
+    "category_id": 1,
+    "title": "Ny tittel",
+    "due_date": "2023-05-20"
+}
+
+###
+
+DELETE {{baseUrl}}/todo/55?api_key=4A8F7B2E3D6C9A1F5E8D2C6B9A3F7E2D
